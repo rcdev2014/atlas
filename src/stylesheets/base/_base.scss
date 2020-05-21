@@ -74,3 +74,146 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100vh;
+
+  &.primary {
+    background-color: $blue;
+
+    .form-box {
+      padding: 50px;
+
+      background-color: rgba(255, 255, 255, .2);
+      border-radius: 30px;
+    }
+
+    .form-heading {
+      margin-bottom: 2rem;
+
+      font-size: 3rem;
+
+      letter-spacing: .5rem;
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    .form-title {
+      margin-bottom: 37px;
+
+      font-size: 26px;
+      letter-spacing: .1rem;
+      color: $white;
+      text-align: center;
+    }
+
+    .ui.form .field > label {
+      color: $white;
+    }
+
+    .form-button {
+      margin-top: 15px;
+      width: 100%;
+
+      color: $white;
+
+      background-color: $green;
+      border-radius: 20px;
+
+      transition: .2s ease-in-out;
+
+      &:hover {
+        color: $white;
+
+        background-color: $blue;
+      }
+    }
+
+    .form-info {
+      margin-top: 10px;
+
+      color: $white;
+      text-align: center;
+    }
+
+    .form-link {
+      color: $green;
+    }
+
+    .form-holder {
+      width: 320px;
+    }
+  }
+
+  &.secondary {
+    background-color: $green;
+
+    .form-box {
+      padding: 50px;
+
+      background-color: rgba(255, 255, 255, .2);
+      border-radius: 30px;
+    }
+
+    .form-heading {
+      margin-bottom: 2rem;
+
+      font-size: 3rem;
+
+      letter-spacing: .5rem;
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    .form-title {
+      margin-bottom: 37px;
+
+      font-size: 26px;
+      letter-spacing: .1rem;
+      color: $white;
+      text-align: center;
+    }
+
+    .ui.form .field > label {
+      color: $white;
+    }
+
+    .form-button {
+      margin-top: 15px;
+      width: 100%;
+
+      color: $white;
+
+      background-color: $blue;
+      border-radius: 20px;
+
+      transition: .2s ease-in-out;
+
+      &:hover {
+        color: $white;
+
+        background-color: $green;
+      }
+    }
+
+    .form-info {
+      margin-top: 10px;
+
+      color: $white;
+      text-align: center;
+    }
+
+    .form-link {
+      color: $blue;
+    }
+
+    .form-holder {
+      width: 320px;
+    }
+  }
+}
