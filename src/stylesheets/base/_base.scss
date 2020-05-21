@@ -75,17 +75,18 @@ code {
     monospace;
 }
 
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.primary {
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
   
-  height: 100vh;
-
-  &.primary {
     background-color: $blue;
-
+  
     .form-box {
       padding: 50px;
 
@@ -148,11 +149,150 @@ code {
     .form-holder {
       width: 320px;
     }
+    
   }
 
-  &.secondary {
-    background-color: $green;
+  // // App
+  // .App .ui.container {
+  //   width: 100%;
+  // }
 
+  .ui.container {
+    width: 100%;
+  }
+
+  // Table
+  .custom-table.ui.table {
+    margin-top: 20px;
+
+    border: 2px solid $faded;
+    border-radius: 0;
+
+    thead th {
+      color: $blue;
+
+      background: $white;
+    }
+
+    tr td {
+      color: $gray;
+    }
+  }
+
+  // Toggle
+  .ui.toggle.checkbox input:checked ~ .box:before,
+  .ui.toggle.checkbox input:checked ~ label:before,
+  .ui.toggle.checkbox input:focus:checked ~ .box:before, 
+  .ui.toggle.checkbox input:focus:checked ~ label:before {
+    background-color: $green !important;
+  }
+
+  // Header
+  .custom-header {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 55px;
+
+    color: $white;
+
+    background-color: $blue;
+
+    .dropdown {
+      margin-left: auto;
+    }
+  }
+
+  // custom heading
+  .custom-heading.ui.segment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -15px;
+
+    border-top: none;
+    border-left-width: 10px;
+    border-left-color: $green;
+    border-radius: 0;
+
+    .text {
+      font-size: 30px;
+      color: $blue;
+    }
+  }
+
+  // Sidebar
+  .custom-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 102;
+
+    padding: 5px 15px;
+
+    margin: 0;
+    width: 230px;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+
+    background-color: $blue;
+
+    .item {
+      font-size: 20px;
+      color: $white;
+    }
+  
+    .brand-name {
+      font-size: 28px;
+      letter-spacing: 5px;
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  // dashboard
+  .dashboard-content.ui.grid {
+    margin-right: 0;
+    margin-left: 230px;
+  }
+
+  // button
+  .ui.button {
+    &.btn-green {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      font-size: 15px;
+      color: $white;
+
+      border-radius: 30px;
+  
+      background: $green;
+
+      &:hover {
+        color: $white;
+
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+.secondary {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+  
+    background-color: $green;
+  
     .form-box {
       padding: 50px;
 
@@ -215,5 +355,136 @@ code {
     .form-holder {
       width: 320px;
     }
+
+  }
+  
+  // // App
+  // .App .ui.container {
+  //   width: 100%;
+  // }
+
+  .ui.container {
+    width: 100%;
+  }
+
+  // Table
+  .custom-table.ui.table {
+    margin-top: 20px;
+
+    border: 2px solid $faded;
+    border-radius: 0;
+
+    thead th {
+      color: $blue;
+
+      background: $white;
+    }
+
+    tr td {
+      color: $gray;
+    }
+  }
+
+  // Toggle
+  .ui.toggle.checkbox input:checked ~ .box:before,
+  .ui.toggle.checkbox input:checked ~ label:before,
+  .ui.toggle.checkbox input:focus:checked ~ .box:before, 
+  .ui.toggle.checkbox input:focus:checked ~ label:before {
+    background-color: $green !important;
+  }
+
+  // Header
+  .custom-header {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 55px;
+
+    color: $white;
+
+    background-color: $green;
+
+    .dropdown {
+      margin-left: auto;
+    }
+  }
+
+  // custom heading
+  .custom-heading.ui.segment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -15px;
+
+    border-top: none;
+    border-left-width: 10px;
+    border-left-color: $blue;
+    border-radius: 0;
+
+    .text {
+      font-size: 30px;
+      color: $blue;
+    }
+  }
+
+  // Sidebar
+  .custom-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 102;
+
+    padding: 5px 15px;
+
+    margin: 0;
+    width: 230px;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+
+    background-color: $green;
+
+    .item {
+      font-size: 20px;
+      color: $white;
+    }
+  
+    .brand-name {
+      font-size: 28px;
+      letter-spacing: 5px;
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  // dashboard
+  .dashboard-content.ui.grid {
+    margin-right: 0;
+    margin-left: 230px;
+  }
+
+  // button
+  .ui.button {
+    &.btn-green {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      font-size: 15px;
+      color: $white;
+
+      border-radius: 30px;
+  
+      background: $blue;
+
+      &:hover {
+        color: $white;
+
+        background-color: $green;
+      }
+    }
   }
 }
+

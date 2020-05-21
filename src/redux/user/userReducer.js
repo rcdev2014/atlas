@@ -3,7 +3,8 @@ import { userTypes } from './userTypes'
 const initialState = {
   userData: {},
   authenticated: false,
-  created: false
+  created: false,
+  users: []
 }
 
 export const userReducer = (state = initialState, action) => {
@@ -13,6 +14,9 @@ export const userReducer = (state = initialState, action) => {
     }
     case userTypes.USER_LOGIN_SUCCESS: {
       return { ...state, authenticated: true }
+    }
+    case userTypes.SET_USERS: {
+      return { ...state, users: action.users }
     }
 
     default:

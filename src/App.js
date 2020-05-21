@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <HashRouter basename="/">
-        <div className="App">
+        <div className="App secondary">
           <Switch>
             <Route path="/" exact component={Login} />
             <Route path="/register" component={Register} />

@@ -44,3 +44,29 @@ export const loginUser = (data, route) => {
       })
   }
 }
+
+export const setUsers = users => {
+  return {
+    type: userTypes.SET_USERS,
+    users: users
+  }
+}
+
+export const fetchUsers = () => {
+  return dispatch => {
+    let userData = []
+
+    console.log('fetch')
+    // GET Users
+    axios
+      .get('https://reqres.in/api/users/')
+      .then(response => {
+        userData = response.data.data
+
+        dispatch(setUsers(userData))
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
+}

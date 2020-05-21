@@ -1,7 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Header extends Component {
-  render() {
-    return <div>This is the Header</div>
-  }
+const Header = () => {
+  return (
+    <div className="custom-header">
+      <div className="ui inline dropdown">
+        <div className="text">
+          <img
+            className="ui avatar image"
+            src="https://api.adorable.io/avatars/65/human.png"
+            alt="Avatar"
+          />
+          Jane Doe
+        </div>
+        <i className="dropdown icon"></i>
+      </div>
+    </div>
+  )
 }
+
+export default Header
