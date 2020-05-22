@@ -4,7 +4,8 @@ const initialState = {
   userData: {},
   authenticated: false,
   created: false,
-  users: []
+  users: [],
+  dashboardActiveMenu: 'accounts' // Temp
 }
 
 export const userReducer = (state = initialState, action) => {
@@ -17,6 +18,10 @@ export const userReducer = (state = initialState, action) => {
     }
     case userTypes.SET_USERS: {
       return { ...state, users: action.users }
+    }
+    case userTypes.DASHBOARD_ACTIVE_MENU: {
+      // Temp
+      return { ...state, dashboardActiveMenu: action.dashboardActiveMenu }
     }
 
     default:

@@ -6,6 +6,7 @@ const CommonInput = ({
   errorContent,
   type,
   label,
+  icon,
   placeholder,
   name,
   className,
@@ -23,6 +24,7 @@ const CommonInput = ({
         }
         type={type}
         label={label}
+        icon={icon}
         placeholder={placeholder}
         name={name}
         className={className}

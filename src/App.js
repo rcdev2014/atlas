@@ -7,6 +7,8 @@ import Register from './containers/register'
 import Dashboard from './containers/dashboard'
 import NoRouteMatch from './containers/404'
 
+import ProtectedRoute from './components/ProtectedRoute'
+
 class App extends Component {
   render() {
     return (
@@ -15,7 +17,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Login} />
             <Route path="/register" component={Register} />
-            <Route path="/dashboard" component={Dashboard} />
+            <ProtectedRoute path="/dashboard" component={Dashboard} />
             <Route component={NoRouteMatch} />
           </Switch>
         </div>

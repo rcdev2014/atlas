@@ -59,14 +59,22 @@ export const fetchUsers = () => {
     console.log('fetch')
     // GET Users
     axios
-      .get('https://reqres.in/api/users/')
+      .get('https://jsonplaceholder.typicode.com/users')
       .then(response => {
-        userData = response.data.data
+        userData = response.data
 
         dispatch(setUsers(userData))
       })
       .catch(err => {
         console.log(err)
       })
+  }
+}
+
+// Temp
+export const setDashboardActiveMenu = activeMenu => {
+  return {
+    type: userTypes.DASHBOARD_ACTIVE_MENU,
+    dashboardActiveMenu: activeMenu
   }
 }
