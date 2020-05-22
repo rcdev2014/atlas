@@ -1,0 +1,17 @@
+.App {
+  .custom-header {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 55px;
+
+    color: $white;
+
+    background-color: $blue;
+
+    .dropdown {
+      margin-left: auto;
+    }
+  }
+}

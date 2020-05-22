@@ -1,0 +1,54 @@
+.App {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+  
+    .form-box {
+      padding: 50px;
+  
+      border-radius: 30px;
+    }
+  
+    .form-heading {
+      margin-bottom: 2rem;
+  
+      font-size: 3rem;
+  
+      letter-spacing: .5rem;
+      
+      text-transform: uppercase;
+    }
+  
+    .form-title {
+      margin-bottom: 37px;
+  
+      font-size: 26px;
+      letter-spacing: .1rem;
+      
+      text-align: center;
+    }
+  
+    .form-button {
+      margin-top: 15px;
+      width: 100%;
+
+      border-radius: 20px;
+  
+      transition: .2s ease-in-out;
+    }
+  
+    .form-info {
+      margin-top: 10px;
+  
+      text-align: center;
+    }
+  
+    .form-holder {
+      width: 320px;
+    }
+  }
+}

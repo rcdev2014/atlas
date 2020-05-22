@@ -1,0 +1,299 @@
+// Primary theme of the App
+.primary {
+
+  .form-container {
+    background-color: $blue;
+  
+    .form-box {
+      background-color: rgba(255, 255, 255, .2);
+    }
+
+    .form-heading {
+      color: $white;
+    }
+
+    .form-title {
+      color: $white;
+  
+    }
+
+    .ui.form .field > label {
+      color: $white;
+    }
+
+    .form-button {
+      color: $white;
+
+      background-color: $green;
+
+      &:hover {
+        color: $white;
+
+        background-color: $blue;
+      }
+    }
+
+    .form-info {
+      color: $white;
+    }
+
+    .form-link {
+      color: $green;
+    }
+  }
+
+  // Table
+  .custom-table.ui.table {
+    margin-top: 20px;
+
+    border: 2px solid $faded;
+    border-radius: 0;
+
+    thead th {
+      color: $blue;
+
+      background: $white;
+    }
+
+    tr td {
+      color: $gray;
+    }
+  }
+
+  // Toggle
+  .ui.toggle.checkbox input:checked ~ .box:before,
+  .ui.toggle.checkbox input:checked ~ label:before,
+  .ui.toggle.checkbox input:focus:checked ~ .box:before, 
+  .ui.toggle.checkbox input:focus:checked ~ label:before {
+    background-color: $green !important;
+  }
+
+  // Header
+  .custom-header {
+    color: $white;
+
+    background-color: $blue;
+  }
+
+  // custom heading
+  .custom-heading.ui.segment {
+    border-left-color: $green;
+
+    .text {
+      color: $blue;
+    }
+  }
+
+  // Sidebar
+  .custom-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 102;
+
+    padding: 5px 15px;
+
+    margin: 0;
+    width: 230px;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+
+    background-color: $blue;
+
+    .item {
+      font-size: 20px;
+      color: $white;
+    }
+  
+    .brand-name {
+      font-size: 28px;
+      letter-spacing: 5px;
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  // dashboard
+  .dashboard-content.ui.grid {
+    margin-right: 0;
+    margin-left: 230px;
+  }
+
+  // button
+  .ui.button {
+    &.btn-green {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      font-size: 15px;
+      color: $white;
+
+      border-radius: 30px;
+  
+      background: $green;
+
+      &:hover {
+        color: $white;
+
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+// Secondary theme of the App
+.secondary {
+  .form-container {
+    background-color: $green;
+  
+    .form-box {
+      background-color: rgba(255, 255, 255, .2);
+    }
+
+    .form-heading {
+      color: $white;
+    }
+
+    .form-title {
+      color: $white;
+    }
+
+    .ui.form .field > label {
+      color: $white;
+    }
+
+    .form-button {
+      color: $white;
+
+      background-color: $blue;
+
+      &:hover {
+        color: $white;
+
+        background-color: $green;
+      }
+    }
+
+    .form-info {
+      color: $white;
+    }
+
+    .form-link {
+      color: $blue;
+    }
+  }
+
+  // Table
+  .custom-table.ui.table {
+    margin-top: 20px;
+
+    border: 2px solid $faded;
+    border-radius: 0;
+
+    thead th {
+      color: $blue;
+
+      background: $white;
+    }
+
+    tr td {
+      color: $gray;
+    }
+  }
+
+  // Toggle
+  .ui.toggle.checkbox input:checked ~ .box:before,
+  .ui.toggle.checkbox input:checked ~ label:before,
+  .ui.toggle.checkbox input:focus:checked ~ .box:before, 
+  .ui.toggle.checkbox input:focus:checked ~ label:before {
+    background-color: $green !important;
+  }
+
+  // Header
+  .custom-header {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 55px;
+
+    color: $white;
+
+    background-color: $green;
+
+    .dropdown {
+      margin-left: auto;
+    }
+  }
+
+  // custom heading
+  .custom-heading.ui.segment {
+    border-left-color: $blue;
+
+    .text {
+      color: $blue;
+    }
+  }
+
+  // Sidebar
+  .custom-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 102;
+
+    padding: 5px 15px;
+
+    margin: 0;
+    width: 230px;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+
+    background-color: $green;
+
+    .item {
+      font-size: 20px;
+      color: $white;
+    }
+  
+    .brand-name {
+      font-size: 28px;
+      letter-spacing: 5px;
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  // dashboard
+  .dashboard-content.ui.grid {
+    margin-right: 0;
+    margin-left: 230px;
+  }
+
+  // button
+  .ui.button {
+    &.btn-green {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      font-size: 15px;
+      color: $white;
+
+      border-radius: 30px;
+  
+      background: $blue;
+
+      &:hover {
+        color: $white;
+
+        background-color: $green;
+      }
+    }
+  }
+}

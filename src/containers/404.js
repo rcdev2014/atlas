@@ -1,7 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class is404 extends Component {
-  render() {
-    return <div>404 page</div>
-  }
+const NoRouteMatch = () => {
+  return (
+    <div className="error-page">
+      <div>404</div>
+      <div>Page not found</div>
+    </div>
+  )
 }
+
+export default NoRouteMatch

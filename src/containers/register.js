@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Form, Message } from 'semantic-ui-react'
+import { Form } from 'semantic-ui-react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { createUser } from '../redux/user/userActions'
 
 import CommonInput from '../common/CommonInput'
 import CommonButton from '../common/CommonButton'
+import CommonMessageNotif from '../common/CommonMessageNotif'
 
 const Register = () => {
   const dispatch = useDispatch()
@@ -45,7 +46,7 @@ const Register = () => {
       <h1 className="form-heading">Atlas</h1>
       <div className="form-box">
         <div className="form-title">Register</div>
-        <Form success className="form-holder">
+        <Form className="form-holder">
           <CommonInput
             error={userValidation.email}
             errorContent="Please enter your email address"
@@ -74,8 +75,7 @@ const Register = () => {
             className="form-button"
             onClick={handleCreateUser}
           />
-          <Message
-            success
+          <CommonMessageNotif
             hidden={!userState.created}
             header="Success!"
             content="You can login now using your account."

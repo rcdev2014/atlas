@@ -6,7 +6,7 @@ const Sidebar = () => {
     <div className="custom-sidebar">
       <h2 className="brand-name">ATLAS</h2>
       <Link to="/dashboard" className="item">
-        <i class="shopping cart icon"></i> Accounts
+        <i className="shopping cart icon"></i> Accounts
       </Link>
     </div>
   )
