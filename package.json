@@ -18,7 +18,7 @@
     "stylelint": "^13.2.0",
     "stylelint-order": "^4.0.0",
     "stylelint-webpack-plugin": "^1.2.3",
-    "swiper": "^5.3.6",
+    "swiper": "^6.5.1",
     "webpack": "4.41.5",
     "webpack-cli": "^3.3.11"
   },
